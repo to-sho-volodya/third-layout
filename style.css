@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/OpenSansCondensed-Light.eot');
+    src: url('fonts/OpenSansCondensed-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSansCondensed-Light.woff2') format('woff2'),
+    url('fonts/OpenSansCondensed-Light.woff') format('woff'),
+    url('fonts/OpenSansCondensed-Light.ttf') format('truetype'),
+    url('fonts/OpenSansCondensed-Light.svg#OpenSansCondensed-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*reset default settings*/
+*{ margin: 0; padding: 0; border:0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none; color: white}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*--------------------*/
+
+body{
+    font-family: "PT Sans";
+    font-size:14px;
+    line-height:22px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+    background-color: #DCDCDC;
+}
+
+.header_content {
+    /*position: relative;*/
+    width: 980px;
+    margin: 0px auto;
+    display: flex;
+    height: 100%;
+    background-color: #DCDCDC;
+    padding: 0px 10px;
+}
+
+.header_1st_block {
+    /*position: absolute;*/
+    margin: auto auto auto 0;
+}
+
+.header_2nd_block {
+    /*position: absolute ;
+    right: 0px;*/
+    /*float: right;
+    margin-left: auto;*/
+    margin: auto 0 auto auto;
+}
+
+.head_inform {
+    /*display: flex;
+    justify-content: space-between;
+    width: 980px;
+    padding: 65px 10px;
+    margin: 0px auto;*/
+}
+
+.contacts {
+    font-family: 'Open Sans Condensed';
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.025em;
+    /* font-weight: 300; */
+    color: #767676;
+}
+.contacts a {
+    color: #767676;
+}
+
+.contacts a:last-child {
+    /* Style for "Обратная с" */
+    width: 171px;
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: right;
+    border-bottom: 1px dashed #000080;
+    letter-spacing: 0.6px;
+    line-height: normal;
+    margin-left: 81px;
+}
+
+.menu_content a {
+    text-decoration:none;
+    display: inline-block;
+    line-height: 1;
+}
+
+.menu_content a:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: white;
+    transition: width 0s ease-in-out;
+}
+
+.menu_content a:hover:after{
+    width: 100%;
+}
+
+.menu {
+    background-color: #777777;
+    min-width: 980px;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu_content {
+    font-size: 22px;
+}
+
+.menu_content ul {
+
+}
+
+.menu_content ul li{
+    display: inline-block;
+    border-left: 2px solid #fff;
+    border-left-height: 1px ;
+    padding: 0 15px 0px 15px;
+}
+
+.menu_content ul li:first-child {
+    border: none;
+}
+
+
+/*.slider {
+    display: inline-block;
+    width: 1248px;
+    height: 462px;
+    position: relative;
+    z-index: -1;
+    margin: -53px auto 0px;
+}*/
+
+.slider{
+    position: relative;
+    padding: 0px 50px;
+    min-width: 0;
+    margin-top: -53px;
+    background-color: #f8f8f8;
+    z-index: -1;
+}
+
+slider_item{
+    text-align: center;
+}
+
+/* Slider */
+.slick-slider{
+    text-align: center;
+}
+/* Slider initialized */
+.slick-slider.slick-initialized{}
+/* Slider dotted*/
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    font-size: 0;
+    width: 34px;
+    margin: -12px 303px 0px 265px;
+    height: 61px;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left:0;
+    background: url("img/sl-arrow_l.svg") 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right:0;
+    background: url("img/sl-arrow_r.svg") 0 0 / 100% no-repeat;
+
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.slick-dots li{
+    /*margin: 0px 10px;*/
+}
+.slick-dots button{
+    /*font-size: 0;*/
+}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{
+    font-size: 0;
+    /*width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;*/
+}
+
+ul.breadcrumb {
+    padding-left: 271px;
+    color: #767676;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a{
+    color: #767676;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: 50px auto 0px;
+}
+
+.leftblock{
+    width: 178px;
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftblock_menu{
+    font-family: "PT Sans";
+    font-size: 18px;
+}
+
+.leftblock_menu li a{
+    color: #767676;
+}
+
+.leftblock_main_ul a:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: black;
+    transition: width 0s ease-in-out;
+}
+
+.leftblock_main_ul a:hover:after{
+    width: 100%;
+}
+
+.dropdown-content{
+    padding-left: 20px;
+    /*visibility: hidden;*/
+}
+
+.dropdown-content li {
+    font-size: 15px;
+    list-style-type: circle;
+}
+
+.dropdown-content a:hover{
+    font-weight: 700;
+    color: #010101;
+}
+
+
+
+.pricelist{
+    /* Style for "Прайс-лист" */
+    width: 151px;
+    height: 27px;
+    color: #444444;
+    font-family: "PT Sans";
+    font-size: 29px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 25px;
+    text-align: center;
+    /* Text style for "П, райс-ли" */
+    font-style: normal;
+    letter-spacing: 0.75px;
+    line-height: normal;
+}
+
+.centerblock{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.product{
+    /*background: url("img/product_background.png");*/
+    background-color: #dcdcdc;
+    width: 250px;
+    height: 380px;
+    margin: 0px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product img{
+    /* Style for "nophoto" */
+    width: 210px;
+    height: 209px;
+    margin: 20px 20px 21px 20px;
+}
+
+.product .basket{
+    width: 28px;
+    height: 21px;
+}
+
+.product_name{
+    /*margin-top: -130px;
+    margin-left: 20px;
+    width: 188px;
+    height: 35px;*/
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 18px;
+    text-align: left;
+    /* Text style for "С, амый кл" */
+    font-style: normal;
+    letter-spacing: 0.45px;
+    line-height: normal;
+    text-align: center;
+}
+
+.price_basket{
+    display: flex;
+    justify-content: space-around;
+}
+
+.price a{
+    /* Style for "1 900 р." */
+    width: 103px;
+    height: 26px;
+    color: #444444;
+    font-family: "PT Sans";
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 18px;
+    text-align: left;
+    /* Text style for "1 900 р." */
+    font-style: normal;
+    letter-spacing: 0.7px;
+    line-height: normal;
+}
+
+.company_info{
+    border-top: 1px #000000 solid;
+    width: 779px;
+    height: 212px;
+    display: flex;
+    margin: 50px 212px 0px 409px;
+    /* Base style */
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    border: 1px solid #000000;
+    color: red;
+    height: 40px;
+    width: 339px;
+}
+
+.form_background{
+    vertical-align: middle;
+}
+
+form label{
+    color: red;
+}
+
+form p{
+    color: #535353;
+}
+
+.form-name{
+    margin-top: 87px;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.8);
+    top: 0;
+    left: 0;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup_body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.popup_content{
+    background-color: #ffffff;
+    width: 466px;
+    height: 578px;
+    padding: 0px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.popup_close{
+    position: absolute;
+    right: -27px;
+    top: -31px;
+    background-color: #767676;
+    padding: 6px 6px 2px 6px;
+}
+
+.message{
+    height: 140px;
+}
+
+
+footer {
+    color: white;
+    width: 100%;
+    height: 220px;
+    margin: 195px auto 0px;
+    background-color: #777777;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    width: 980px;
+    margin: 0px auto;
+    background-color: #777777;
+    padding: 0px 10px;
+}
+
+button {
+    width: 128px;
+    height: 42px;
+    background-color: #777777;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 700;
+    margin: 85px auto 0px;
+}
+
+.form-label{
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 50px;
+}
+
+.footer_content a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer_menu {
+    text-decoration: underline;
+    padding-top: 50px;
+    margin-bottom: 53px;
+}
+
+.company_link {
+    font-size: 14px;
+    margin: 17px 0px 69px 0px;
+    background: url(img/footer_logo.png) left no-repeat;
+    padding:  33px 0px 0px 42px;
+    width: 208px;
+
+}
