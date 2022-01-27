@@ -86,7 +86,7 @@
       </div>
 
       <div class="logo">
-        <img src="img/MS_-_EXCEL.svg" alt="">
+        <img class="leftblock_img" src="img/MS_-_EXCEL.svg" alt="">
       </div>
       <div class="price-list">
         <p class="pricelist">Прайс-лист</p>
@@ -203,20 +203,21 @@
           <img src="img/close_form.svg" alt="">
         </a>
         <div class="popup_form">
-          <form action="#" method="get">
+
+          <form class="feedback-form" action="#" method="get">
             <p class="form-name form-label">Ваше имя *</p>
-            <input type="text" name="login">
+            <input class="name field" type="text" name="login">
 
             <p class="form-label">Телефон*</p>
-              <input type="text" name="phone">
+              <input class="phone field" type="text" name="phone">
 
             <p class="form-label">Email*</p>
-              <input type="text" name="email">
+              <input class="email field" type="text" name="email">
             
             <p class="form-label">Сообщение*</p>
-              <input class="message" type="text" name="email">
+              <textarea class="message field" type="text" name="email"></textarea>
 
-            <button>Отправить</button>
+            <button type="submit" class="validateBtn">Отправить</button>
           </form>
         </div>
       </div>

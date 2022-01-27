@@ -311,22 +311,42 @@ ul.breadcrumb li a{
     width: 100%;
 }
 
+.leftblock_img{
+    margin-left: 30px;
+    margin-top: 96px;
+}
+
+.teaser_text{
+    padding-left: 18px;
+}
+
 .dropdown-content{
     padding-left: 20px;
-    /*visibility: hidden;*/
+   /*display: none;*/
+    visibility: hidden;
+    /*margin-top: -30px;*/
 }
 
 .dropdown-content li {
     font-size: 15px;
     list-style-type: circle;
+    margin-top: -27px;
+    font-height: 20px;
+    list-style-type: circle;
 }
 
-.dropdown-content a:hover{
+.dropdown-content li:hover{
     font-weight: 700;
     color: #010101;
+    list-style-type: circle;
+
 }
 
-
+.dropdown:hover li{
+    visibility: visible;
+    display:  inline-block;
+    margin-top: 5px;
+}
 
 .pricelist{
     /* Style for "Прайс-лист" */
@@ -357,7 +377,7 @@ ul.breadcrumb li a{
     background-color: #dcdcdc;
     width: 250px;
     height: 380px;
-    margin: 0px 0px 0px 15px;
+    margin: 0px 0px 20px 15px;
     display: flex;
     flex-direction: column;
 }
@@ -372,6 +392,8 @@ ul.breadcrumb li a{
 .product .basket{
     width: 28px;
     height: 21px;
+    margin: auto auto 0px 41px;
+
 }
 
 .product_name{
@@ -391,12 +413,13 @@ ul.breadcrumb li a{
     font-style: normal;
     letter-spacing: 0.45px;
     line-height: normal;
-    text-align: center;
 }
 
 .price_basket{
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
+    padding: 10px;
 }
 
 .price a{
@@ -440,7 +463,6 @@ form{
 
 form input{
     border: 1px solid #000000;
-    color: red;
     height: 40px;
     width: 339px;
 }
@@ -459,6 +481,11 @@ form p{
 
 .form-name{
     margin-top: 87px;
+}
+
+.message{
+    border: 1px solid #000000;
+    resize: none;
 }
 
 .popup{
