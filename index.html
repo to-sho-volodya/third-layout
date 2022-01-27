@@ -205,16 +205,18 @@
 
           <form class="feedback-form" action="#" method="get">
             <p class="form-name form-label">Ваше имя *</p>
-            <input class="name field" type="text" name="login" placeholder="Поле обязательно для заполнения">
+            <input required placeholder="Поле обязательно для ввода" class="name field" type="text" name="login"
+                   placeholder="Поле обязательно для заполнения">
 
             <p class="form-label">Телефон*</p>
             <input required placeholder="Поле обязательно для ввода" class="phone field" type="text" name="phone">
 
             <p class="form-label">Email*</p>
-            <input class="email field" type="text" name="email">
+            <input required placeholder="Поле обязательно для ввода" class="email field" type="text" name="email">
 
-            <p class="form-label">Сообщение*</p>
-            <textarea class="message field" type="text" name="email"></textarea>
+            <p class="form-label">Сообщение</p>
+            <textarea class="message field" type="text"
+                      name="email"></textarea>
 
             <button type="submit" class="validateBtn">Отправить</button>
           </form>

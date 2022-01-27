@@ -569,9 +569,16 @@ form p {
     margin-top: 87px;
 }
 
-input[type=text]:invalid:not(:focus):placeholder-shown ~ .requirements {
+input[type=text]:not(:focus) {
+    -webkit-box-shadow: -1px 0px 34px -12px rgba(232, 24, 24, 0.93) inset;
+    -moz-box-shadow: -1px 0px 34px -12px rgba(232, 24, 24, 0.93) inset;
+    box-shadow: -1px 0px 34px -12px rgba(232, 24, 24, 0.93) inset;
+}
+
+input[type=text]:invalid:not(:focus):not(:placeholder-shown) ~ .requirements {
     background-color: lightsalmon;
 }
+
 
 .message {
     border: 1px solid #000000;
