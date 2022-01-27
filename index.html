@@ -15,7 +15,7 @@
     <div class="header_content">
       <div class="header_1st_block">
         <div class="company_name">
-          <img src="img/logo.png" alt="Logo picture" width="" ; height="">
+          <img src="img/logo.png" alt="Logo picture" width="" height="">
         </div>
       </div>
       <div class="header_2nd_block">
@@ -42,18 +42,13 @@
 
   <div class="slider">
     <div class="slider_item">
-      <img data-lazy="img/slide1.png" alt="">
+      <img data-lazy="img/slide1.png" width="" height="" alt="">
     </div>
     <div class="slider_item">
-      <img data-lazy="img/slide2.png" alt="">
+      <img data-lazy="img/slide2.png" width="" height="" alt="">
     </div>
   </div>
-  <!--Connect jQuerry-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!--Connect Slick-->
-  <script src="js/slick.min.js"></script>
-  <!--Connect script file-->
-  <script src="js/script.js"></script>
+
 
   <div class="breadcrumbs">
     <ul class="breadcrumb">
@@ -86,7 +81,7 @@
       </div>
 
       <div class="logo">
-        <img class="leftblock_img" src="img/MS_-_EXCEL.svg" alt="">
+        <img class="leftblock_img" src="img/MS_-_EXCEL.svg" width="" height="" alt="">
       </div>
       <div class="price-list">
         <p class="pricelist">Прайс-лист</p>
@@ -97,7 +92,7 @@
       <div class="centerblock">
         <div class="product">
           <div class="photo">
-            <img src="img/nophoto.png" alt="">
+            <img src="img/nophoto.png" width="" height="" alt="">
           </div>
           <div class="teaser_text">
             <p class="product_name">Самый клевый чайник, который надо купить!</p>
@@ -107,13 +102,14 @@
               <a href="#" class="price">1 900 р.</a>
             </div>
             <div class="basket">
-              <img class="basket" src="img/addtobasket_mini.png" alt="">
+              <a href="#"> <a href="#"><img class="basket" src="img/addtobasket_mini.png" width="" height="" alt=""></a>
+              </a>
             </div>
           </div>
         </div>
         <div class="product">
           <div class="photo">
-            <img src="img/nophoto.png" alt="">
+            <img src="img/nophoto.png" width="" height="" alt="">
           </div>
           <div class="teaser_text">
             <p class="product_name">Самый клевый чайник, который надо купить!</p>
@@ -123,13 +119,14 @@
               <a href="#" class="price">1 900 р.</a>
             </div>
             <div class="basket">
-              <img class="basket" src="img/addtobasket_mini.png" alt="">
+              <a href="#"><img class="basket" src="img/addtobasket_mini.png" width="" height="" alt=""></a>
+
             </div>
           </div>
         </div>
         <div class="product">
           <div class="photo">
-            <img src="img/nophoto.png" alt="">
+            <img src="img/nophoto.png" width="" height="" alt="">
           </div>
           <div class="teaser_text">
             <p class="product_name">Самый клевый чайник, который надо купить!</p>
@@ -139,13 +136,14 @@
               <a href="#" class="price">1 900 р.</a>
             </div>
             <div class="basket">
-              <img class="basket" src="img/addtobasket_mini.png" alt="">
+              <a href="#"><img class="basket" src="img/addtobasket_mini.png" width="" height="" alt=""></a>
+
             </div>
           </div>
         </div>
         <div class="product">
           <div class="photo">
-            <img src="img/nophoto.png" alt="">
+            <img src="img/nophoto.png" width="" height="" alt="">
           </div>
           <div class="teaser_text">
             <p class="product_name">Самый клевый чайник, который надо купить!</p>
@@ -155,13 +153,14 @@
               <a href="#" class="price">1 900 р.</a>
             </div>
             <div class="basket">
-              <img class="basket" src="img/addtobasket_mini.png" alt="">
+              <a href="#"><img class="basket" src="img/addtobasket_mini.png" width="" height="" alt=""></a>
+
             </div>
           </div>
         </div>
         <div class="product">
           <div class="photo">
-            <img src="img/nophoto.png" alt="">
+            <img src="img/nophoto.png" width="" height="" alt="">
           </div>
           <div class="teaser_text">
             <p class="product_name">Самый клевый чайник, который надо купить!</p>
@@ -171,7 +170,8 @@
               <a href="#" class="price">1 900 р.</a>
             </div>
             <div class="basket">
-              <img class="basket" src="img/addtobasket_mini.png" alt="">
+              <a href="#"><img class="basket" src="img/addtobasket_mini.png" width="" height="" alt=""></a>
+
             </div>
           </div>
         </div>
@@ -193,29 +193,28 @@
   </div>
 
 
-
   <div id="popup" class="popup">
     <div class="popup_body">
 
       <div class="popup_content">
-        <!--<img class="form_background" src="img/form_background.svg" alt="">-->
+        <!--<img class="form_background" src="img/form_background.svg" width="" height="" alt="">-->
         <a href="#" class="popup_close">
-          <img src="img/close_form.svg" alt="">
+          <img src="img/close_form.svg" width="" height="" alt="">
         </a>
         <div class="popup_form">
 
           <form class="feedback-form" action="#" method="get">
             <p class="form-name form-label">Ваше имя *</p>
-            <input class="name field" type="text" name="login">
+            <input class="name field" type="text" name="login" placeholder="Поле обязательно для заполнения">
 
             <p class="form-label">Телефон*</p>
-              <input class="phone field" type="text" name="phone">
+            <input required placeholder="Поле обязательно для ввода" class="phone field" type="text" name="phone">
 
             <p class="form-label">Email*</p>
-              <input class="email field" type="text" name="email">
-            
+            <input class="email field" type="text" name="email">
+
             <p class="form-label">Сообщение*</p>
-              <textarea class="message field" type="text" name="email"></textarea>
+            <textarea class="message field" type="text" name="email"></textarea>
 
             <button type="submit" class="validateBtn">Отправить</button>
           </form>
@@ -250,5 +249,12 @@
   </footer>
 
 </div>
+
+<!--Connect jQuerry-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--Connect Slick-->
+<script src="js/slick.min.js"></script>
+<!--Connect script file-->
+<script src="js/script.js"></script>
 </body>
 </html>
